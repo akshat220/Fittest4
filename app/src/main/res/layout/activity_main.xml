@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bkg"
+tools:context=".MainActivity">
+
+
+<ImageView
+    android:id="@+id/f4"
+    android:layout_width="352dp"
+    android:layout_height="293dp"
+    android:layout_centerHorizontal="true"
+    app:srcCompat="@drawable/f4" />
+
+<EditText
+    android:id="@+id/editText"
+    android:layout_width="289dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:ems="10"
+    android:hint="Username"
+    android:inputType="textPersonName" />
+
+<EditText
+    android:id="@+id/editText2"
+    android:layout_width="289dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editText"
+    android:layout_centerHorizontal="true"
+    android:ems="10"
+    android:hint="Password"
+    android:inputType="textPassword" />
+
+<Button
+    android:id="@+id/button"
+    style="@style/Widget.AppCompat.Button"
+    android:layout_width="259dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editText2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:background="@color/colorAccent"
+    android:text="LOGIN"
+    android:textColor="#1A237E"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+<Button
+    android:alpha="0.25"
+    android:id="@+id/button1"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/button"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:text="Create an Account?"
+    android:textColor="#E65100" />
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Page_4"
+android:background="@drawable/bkg">
+
+<TextView
+    android:id="@+id/header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Know Your BMI"
+    android:layout_centerHorizontal="true"
+    android:textSize="40sp"/>
+
+<LinearLayout
+    android:layout_below="@id/header"
+    android:id="@+id/detail"
+    android:layout_marginTop="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
+
+    <EditText
+        android:layout_width="289dp"
+        android:id="@+id/Weight"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Weight (in Kg)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:layout_width="289dp"
+        android:id="@+id/Height"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Height (in m)"
+        android:inputType="numberDecimal" />
+
+</LinearLayout>
+
+    <Button
+    android:id="@+id/calci"
+    style="@style/Widget.AppCompat.Button"
+    android:layout_width="249dp"
+    android:layout_height="wrap_content"
+    android:text="Calculate"
+    android:layout_below="@id/detail"
+    android:layout_centerHorizontal="true"
+    android:textColor="#1A237E"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginTop="16dp"
+    android:background="@color/colorAccent"/>
+
+    <LinearLayout
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calci"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="80dp"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BMI : "
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/result1"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/result"
+        android:id="@+id/tell"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/freetrail"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Free trail"
+            android:layout_gravity="center"
+            android:textColor="#1A237E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/payment"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:layout_gravity="center"
+            android:textColor="#1A237E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/tac"
+            android:layout_width="wrap_content"
+            android:alpha="0.25"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Terms and Conditions"
+            android:layout_gravity="center"
+            android:textColor="#1A237E"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
